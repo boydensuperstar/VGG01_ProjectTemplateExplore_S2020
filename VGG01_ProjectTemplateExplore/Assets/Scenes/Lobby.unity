@@ -425,7 +425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682017868}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 8.27, y: 26.97, z: -18.15}
+  m_LocalPosition: {x: 8.63, y: 26.97, z: -18.15}
   m_LocalScale: {x: 1.7701, y: 3.0709465, z: 0.3967325}
   m_Children: []
   m_Father: {fileID: 196335401}
@@ -551,7 +551,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775550219}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -10.49, y: 26.97, z: -17.87}
+  m_LocalPosition: {x: -10.86, y: 26.97, z: -17.87}
   m_LocalScale: {x: 1.7701, y: 3.0709465, z: 0.3967325}
   m_Children: []
   m_Father: {fileID: 196335401}
@@ -627,6 +627,7 @@ GameObject:
   - component: {fileID: 784041582}
   - component: {fileID: 784041581}
   - component: {fileID: 784041580}
+  - component: {fileID: 784041583}
   m_Layer: 0
   m_Name: Entrance1
   m_TagString: Untagged
@@ -656,7 +657,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784041578}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -706,6 +707,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784041578}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &784041583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784041578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf5bde28f17adc40b8cff525e352eff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: SceneWWW
 --- !u!1 &1114750904
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,7 +929,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192987753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.95, y: 26.97, z: -8.66}
+  m_LocalPosition: {x: -0.95, y: 26.97, z: -8.53}
   m_LocalScale: {x: 1.7701, y: 3.0709465, z: 0.3967325}
   m_Children: []
   m_Father: {fileID: 196335401}
