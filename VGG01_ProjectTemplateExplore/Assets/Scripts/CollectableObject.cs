@@ -20,8 +20,14 @@ public class CollectableObject : MonoBehaviour
     void OnTriggerEnter()
     {
         Debug.Log("Picking up " + item.name);
-        CollectSound.Play();
-        Inventory.instance.Add(item);
-        Destroy(gameObject);
+        
+        bool wasPickedUp = Inventory.instance.Add(item);
+
+        if(wasPickedUp)
+        {
+            CollectSound.Play();
+            Destroy(gameObject);
+        }
+       
     }
 }
