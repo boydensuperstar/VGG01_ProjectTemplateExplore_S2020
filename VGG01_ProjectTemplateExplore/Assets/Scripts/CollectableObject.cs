@@ -4,21 +4,24 @@ using UnityEngine;
 
 public class CollectableObject : MonoBehaviour
 {
-    public int RotateSpeed;
+    public int RotateSpeed = 2;
     public AudioSource CollectSound;
     public GameObject ThisObject;
+    public Item item;
 
 
     void Update()
     {
-        RotateSpeed = 2;
+      
         transform.Rotate(0, RotateSpeed, 0, Space.World);
     }
 
 
     void OnTriggerEnter()
     {
+        Debug.Log("Picking up " + item.name);
         CollectSound.Play();
-        ThisObject.SetActive(false);
+        Inventory.instance.Add(item);
+        Destroy(gameObject);
     }
 }
