@@ -2353,6 +2353,7 @@ GameObject:
   - component: {fileID: 1742556051}
   - component: {fileID: 1742556050}
   - component: {fileID: 1742556049}
+  - component: {fileID: 1742556053}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2440,6 +2441,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1742556053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742556048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373317fbb649b6d4c9986bd9852a0d9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemsParent: {fileID: 1614139989}
 --- !u!1 &2001738167
 GameObject:
   m_ObjectHideFlags: 0
@@ -2900,26 +2914,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950698579875710225, guid: 6d1b3f56fedcc574fb99ab34c9137bff,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950698579875710225, guid: 6d1b3f56fedcc574fb99ab34c9137bff,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950698580247587196, guid: 6d1b3f56fedcc574fb99ab34c9137bff,
-        type: 3}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950698580247587196, guid: 6d1b3f56fedcc574fb99ab34c9137bff,
-        type: 3}
-      propertyPath: m_Colors.m_DisabledColor.a
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d1b3f56fedcc574fb99ab34c9137bff, type: 3}
